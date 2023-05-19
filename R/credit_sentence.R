@@ -28,6 +28,3 @@ credit_sentence <- function(data, group_var) {
     dplyr::summarise(credit_statement = paste(credit_statement, collapse = ",")) %>%
     dplyr::summarise(sentence = paste0("<b>", name, "</b>:", credit_statement, ".", collapse = " "))
 }
-
-
-   tidyr::unite("name", first_name:surname, sep = "")
